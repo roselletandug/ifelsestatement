@@ -1,0 +1,74 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <title>Temperature converter</title>
+
+    <script>
+    function logout(){
+        let response = confirm("are you sure you want to log out?");
+        
+        if(response){
+
+
+            window.close('home.html');
+            window.open('index.html');
+        }
+    }
+</script>
+
+<head>
+
+<body>
+            <br>
+            <br>
+            <br>
+            <br>
+
+      <div class="temp-container">
+        <label for="temp">If-else Statement</label>
+            <br>
+            <br>
+      <p> Input 1st Number:</p>
+      <input type= "number" id="num1">
+      <br>
+      <br>
+      <p>Input 2nd Number:</p>
+      <input type= "number" id="num2">
+
+      <button type="button" onclick="dance()">Switch</button>
+
+      <br>
+      <img id="dance" src="img/">
+
+      <script>
+        function dance () {
+            var image = document.getElementById('dance');
+
+            let a = parseInt(document.getElementById("num1").value);
+            let b = parseInt(document.getElementById("num2").value);
+
+            let x = a + b;
+
+            if(x >= 100) {
+                image.src = "images/monkey.gif";
+            } else {
+                image.src = "images/monkey2.gif";
+            }
+        }
+      </script>
+
+      <br>
+      <br>
+
+
+    <a href="index.html"> prev << </a>
+</div>
+</body>
+
+</html>
